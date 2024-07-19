@@ -7,7 +7,7 @@ export default function Home() {
         hello
         <ins className="adsbygoogle"
              style={{ display: 'block' }}
-             data-ad-client="ca-pub-xxxxxxxxxx"
+             data-ad-client="ca-pub-8034519108259358"
              data-ad-slot="xxxxxxx"></ins>
         <script>
           {`(adsbygoogle = window.adsbygoogle || []).push({});`}
