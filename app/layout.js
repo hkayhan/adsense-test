@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
           {`(adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-6506029155719328",
+            google_ad_client: "ca-pub-8034519108259358",
             enable_page_level_ads: true
           });`}
         </script>
