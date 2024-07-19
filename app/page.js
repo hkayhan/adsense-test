@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ asda
                    data-ad-slot="6991267104"></ins>
           </div>
 
-        <script>
+          {/* eslint-disable-next-line @next/next/inline-script-id */}
+        <Script>
           {`(adsbygoogle = window.adsbygoogle || []).push({});`}
-        </script>
+        </Script>
       </main>
   );
 }

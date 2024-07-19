@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from 'next/head';
+import Script from "next/script";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,14 +14,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
       <html lang="en">
+      {/* eslint-disable-next-line @next/next/no-script-component-in-head */}
       <Head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     {/*   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
           {`(adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "ca-pub-8034519108259358",
             enable_page_level_ads: true
           });`}
-        </script>
+        </script>*/}
+
+          <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
+          {/* eslint-disable-next-line @next/next/inline-script-id */}
+          <Script
+              dangerouslySetInnerHTML={{
+                  __html: `(adsbygoogle = window.adsbygoogle || []).push({
+                      google_ad_client: "ca-pub-8034519108259358",
+                      enable_page_level_ads: true
+                    });`,
+              }}
+          ></Script>
         <title>Test</title>
       </Head>
       <body>{children}</body>
