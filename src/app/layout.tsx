@@ -21,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-          <script async
-                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358"
-                  crossOrigin="anonymous"></script>
+
         <AdSense pId="ca-pub-8034519108259358"/>
           {/*<Script*/}
           {/*    async*/}
