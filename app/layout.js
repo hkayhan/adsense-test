@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from 'next/head';
 import Script from "next/script";
+import GoogleAdsense from "@/components/GoogleAdsense";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,8 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en">
-      {/* eslint-disable-next-line @next/next/no-script-component-in-head */}
+      <html lang="tr">
       <Head>
      {/*   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
           });`}
         </script>*/}
 
-          <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
-          {/* eslint-disable-next-line @next/next/inline-script-id */}
+        {/*  <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
+           eslint-disable-next-line @next/next/inline-script-id
           <Script
               dangerouslySetInnerHTML={{
                   __html: `(adsbygoogle = window.adsbygoogle || []).push({
@@ -33,10 +33,14 @@ export default function RootLayout({ children }) {
                       enable_page_level_ads: true
                     });`,
               }}
-          ></Script>
+          ></Script>*/}
         <title>Test</title>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358"
+                  crossOrigin="anonymous"></script>
       </Head>
       <body>{children}</body>
+      <GoogleAdsense pId="8034519108259358" />
+
       </html>
   );
 }
