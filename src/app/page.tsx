@@ -22,11 +22,7 @@ export default function Home() {
                 dataAdSlot="6991267104"
               />
 
-              <AdBanner
-                dataAdFormat="auto"
-                dataFullWidthResponsive={true}
-                dataAdSlot="6152101804"
-              />
+
             </div>
 
             <img
@@ -56,11 +52,11 @@ export default function Home() {
           </div>
           <div className="w-full md:w-4/12 px-4 mb-8">
             <div className="bg-black mb-5">
-            {/*  <AdBanner
+              <AdBanner
                 dataAdFormat="auto"
                 dataFullWidthResponsive={true}
-                dataAdSlot="6991267104"
-              />*/}
+                dataAdSlot="6152101804"
+              />
             </div>
             <div className="bg-gray-100 px-4 py-6 rounded">
               <h3 className="text-lg font-bold mb-2">Categories</h3>

@@ -21,8 +21,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-
-        <AdSense pId="ca-pub-8034519108259358"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <script
+              dangerouslySetInnerHTML={{
+                  __html: `(adsbygoogle = window.adsbygoogle || []).push({
+                      google_ad_client: "ca-pub-8034519108259358",
+                      enable_page_level_ads: true
+                    });`,
+              }}
+          />
+        {/*<AdSense pId="ca-pub-8034519108259358"/>*/}
           {/*<Script*/}
           {/*    async*/}
           {/*    src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358`}*/}
