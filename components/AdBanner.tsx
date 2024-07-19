@@ -28,6 +28,11 @@ const AdBanner = ({
     }
   }, []);
 
+
+  console.log("dataAdSlot",dataAdSlot);
+  console.log("dataAdFormat",dataAdFormat);
+  console.log(dataFullWidthResponsive);
+
   return (
     <ins
       className="adsbygoogle"

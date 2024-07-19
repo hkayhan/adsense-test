@@ -1,7 +1,12 @@
+'use client'
 import Image from "next/image";
 import AdBanner from "../../components/AdBanner";
+import {useEffect} from "react";
 
 export default function Home() {
+  useEffect(()=>{<script async
+                         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358"
+                         crossOrigin="anonymous"></script>})
   return (
     <>
       <nav className="bg-gray-800 py-4">
@@ -16,11 +21,19 @@ export default function Home() {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-8/12 px-4 mb-8">
             <div className="bg-black mb-5">
-              <AdBanner
+          {/*    <AdBanner
                 dataAdFormat="auto"
                 dataFullWidthResponsive={true}
                 dataAdSlot="6991267104"
-              />
+              />*/}
+
+              <ins className="adsbygoogle"
+                   style={{display:"block"}}
+                   data-ad-client="ca-pub-8034519108259358"
+                   data-ad-slot="6991267104"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+
             </div>
 
             <img
