@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import AdSense from "@/components/AdSense";
+import Head from 'next/head';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,11 +12,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-    <head>
-      <AdSense pId={"ca-pub-8034519108259358"}/>
-    </head>
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="en">
+      <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          {`(adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6506029155719328",
+            enable_page_level_ads: true
+          });`}
+        </script>
+        <title>Test</title>
+      </Head>
+      <body>{children}</body>
+      </html>
   );
 }
