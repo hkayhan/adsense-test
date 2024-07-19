@@ -21,16 +21,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/*<AdSense pId="ca-pub-8034519108259358"/>*/}
-          {/*<Script
-              async
-              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358`}
-              crossOrigin='anonymous'
-              strategy='afterInteractive'
-          />*/}
-
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358"
+          <script async
+                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358"
                   crossOrigin="anonymous"></script>
+        <AdSense pId="ca-pub-8034519108259358"/>
+          {/*<Script*/}
+          {/*    async*/}
+          {/*    src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358`}*/}
+          {/*    crossOrigin='anonymous'*/}
+          {/*    strategy='afterInteractive'*/}
+          {/*/>*/}
+
+      {/*    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8034519108259358"
+                  crossOrigin="anonymous"></script>*/}
+          <title></title>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
