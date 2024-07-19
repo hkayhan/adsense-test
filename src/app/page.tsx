@@ -21,6 +21,12 @@ export default function Home() {
                 dataFullWidthResponsive={true}
                 dataAdSlot="6991267104"
               />
+
+              <AdBanner
+                dataAdFormat="auto"
+                dataFullWidthResponsive={true}
+                dataAdSlot="6152101804"
+              />
             </div>
 
             <img
